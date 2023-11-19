@@ -22,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
         tv_Output = findViewById(R.id.tvOutput);
         et_Input = findViewById(R.id.etInput);
         btn_Go = findViewById(R.id.btnGo);
-        //koko wawa
+        //koko wawaبغفاابال
     }
 }
