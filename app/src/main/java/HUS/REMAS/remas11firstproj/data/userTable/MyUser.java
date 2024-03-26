@@ -4,8 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 @Entity
-public class MyUser
-{
+public class MyUser {
     @PrimaryKey(autoGenerate = true)//تحديد الصفة كمفتاح رئيسي والذي يُنتجح بشكل تلقائي
     public long keyid;
     @ColumnInfo(name = "full_Name")//اعطاء اسم جديد للعامود-الصفة في الجدول
@@ -14,16 +13,47 @@ public class MyUser
     public String phone;
     public String passw;
 
-
-    @Override
-    public String toString() {
-        return "MyUser{" +
-                "keyid=" + keyid +
-                ", fullName='" + fullName + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", passw='" + passw + '\'' +
-                '}';
+    public long getKeyid() {
+        return keyid;
     }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getPassw() {
+        return passw;
+    }
+
+    public void setKeyid(long keyid) {
+        this.keyid = keyid;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setPassw(String passw) {
+        this.passw = passw;
+    }
+
 }
+
+
 

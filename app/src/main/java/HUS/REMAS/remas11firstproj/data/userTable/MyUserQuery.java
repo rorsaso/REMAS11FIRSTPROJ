@@ -8,7 +8,7 @@ import androidx.room.Update;
 
 import java.util.List;
 @Dao
-public interface MyUserDoa {
+public interface MyUserQuery {
     @Query("SELECT * FROM My")
     List<MyUser> getAll();
 
