@@ -1,40 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    tools:tooltipText="Press To ">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvOutput"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Hello World"
-        android:textColor="#2196F3"
-        android:textSize="24sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnGo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
-        android:text="Press To Go"
-        android:textSize="34sp"
-        app:cornerRadius="30dp" />
+        <SearchView
+            android:id="@+id/srchV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
-    <EditText
-        android:id="@+id/etInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter your input"
-        android:inputType="textPersonName"
-        android:textSize="24sp" />
+        </SearchView>
 
-</LinearLayout>
+        <Spinner
+            android:id="@+id/spnrSubject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <ListView
+            android:id="@+id/IstvTasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DAC4E6" />
+
+    </LinearLayout>
+</RelativeLayout>
