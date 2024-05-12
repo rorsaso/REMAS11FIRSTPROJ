@@ -1,7 +1,6 @@
 package HUS.REMAS.remas11firstproj;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class EditTaskActivity extends AppCompatActivity {
